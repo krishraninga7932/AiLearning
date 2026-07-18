@@ -1,0 +1,91 @@
+Artificial Intelligence (AI) is one of the fastest growing fields in computer science. It focuses on creating systems that can perform tasks that normally require human intelligence. These tasks include understanding language, recognizing images, making decisions, solving problems, and learning from experience.
+
+Machine Learning is a subset of Artificial Intelligence. Instead of explicitly programming every rule, machine learning allows computers to learn patterns from data. The more quality data a model receives, the better it can perform. Machine learning algorithms are widely used in recommendation systems, fraud detection, spam filtering, healthcare, and finance.
+
+Deep Learning is a specialized branch of machine learning. It uses artificial neural networks with many hidden layers to learn complex representations from data. Deep learning has achieved remarkable success in image classification, speech recognition, natural language processing, and autonomous driving.
+
+Natural Language Processing, commonly known as NLP, enables computers to understand, interpret, and generate human language. NLP combines linguistics, computer science, and artificial intelligence to help machines process text and speech efficiently.
+
+Large Language Models, often called LLMs, are trained on massive amounts of text collected from books, websites, research papers, articles, and public datasets. These models learn statistical relationships between words and can generate coherent and meaningful responses.
+
+Popular Large Language Models include GPT, Llama, Gemma, Mistral, Claude, DeepSeek, and Qwen. Each model has different strengths, parameter sizes, licensing terms, and performance characteristics.
+
+Generative AI refers to systems capable of generating new content such as text, images, music, code, videos, and even 3D objects. These models have transformed industries by improving productivity and enabling creative workflows.
+
+Prompt Engineering is the process of designing effective prompts that guide language models toward generating accurate and useful responses. A well-written prompt often improves results significantly without changing the underlying model.
+
+Retrieval Augmented Generation, or RAG, combines information retrieval with language generation. Instead of relying only on the knowledge stored inside the model's parameters, RAG retrieves relevant documents from external sources before generating an answer.
+
+A typical RAG pipeline begins by collecting documents from various sources such as PDFs, Word files, websites, databases, APIs, and text files. These documents are loaded into memory using document loaders.
+
+Document Loaders are responsible for reading information from different file formats. LangChain provides loaders for PDF files, text files, HTML pages, CSV files, JSON files, websites, and many other data sources.
+
+Once documents are loaded, they are often split into smaller chunks. Text splitting is necessary because language models have context limits and because smaller chunks improve retrieval quality.
+
+CharacterTextSplitter divides text using a fixed separator such as new lines or spaces. RecursiveCharacterTextSplitter is more advanced because it tries multiple separators while preserving semantic meaning whenever possible.
+
+Chunk Size determines the maximum number of characters in each chunk. Chunk Overlap ensures that important information appearing near chunk boundaries is not lost during splitting.
+
+After splitting, every chunk is converted into an embedding. An embedding is a numerical representation of text that captures its semantic meaning rather than just its exact words.
+
+Embedding models include all-MiniLM-L6-v2, nomic-embed-text, BGE models, OpenAI embedding models, and several multilingual models. Different embedding models produce vectors with different dimensions.
+
+Vector databases store embeddings instead of raw text. Popular vector databases include FAISS, ChromaDB, Pinecone, Weaviate, Milvus, Qdrant, and Elasticsearch.
+
+FAISS is an open-source library developed by Meta for efficient similarity search over large collections of vectors. It is commonly used for local development because it is fast and easy to integrate.
+
+When a user asks a question, the same embedding model converts the question into a vector. Similarity search then finds document chunks that are closest to the query vector.
+
+The retrieved chunks are sent to the Large Language Model along with the user's question. The language model uses this additional context to generate a more accurate answer.
+
+This approach reduces hallucinations because the model answers using retrieved information instead of relying entirely on its internal knowledge.
+
+LangChain is a framework that simplifies the development of LLM-powered applications. It provides components for document loading, text splitting, embeddings, vector stores, retrievers, memory, agents, and chains.
+
+Chains connect multiple components into a single workflow. For example, a chain may load documents, split them, generate embeddings, retrieve relevant chunks, and finally ask an LLM to generate an answer.
+
+Agents go one step further by allowing the model to decide which tools to use. An agent may search the web, query a database, perform calculations, call APIs, or retrieve documents depending on the user's request.
+
+Memory enables conversational applications to remember previous interactions. This helps create natural conversations where the assistant maintains context across multiple messages.
+
+Transformers revolutionized NLP by introducing the attention mechanism. Unlike recurrent neural networks, transformers process entire sequences simultaneously, allowing efficient parallel computation.
+
+Attention allows a model to focus on the most relevant words in a sentence while processing information. Self-attention computes relationships between every pair of words in a sequence.
+
+Positional Encoding provides information about word order because transformers process tokens in parallel rather than sequentially.
+
+Training an LLM requires enormous computational resources, including thousands of GPUs, massive datasets, distributed training techniques, and optimized software frameworks.
+
+Fine-tuning adapts a pretrained model to a specific task or domain. Instead of training from scratch, fine-tuning updates the model using smaller, task-specific datasets.
+
+Parameter Efficient Fine-Tuning techniques such as LoRA reduce computational cost by training only a small subset of parameters.
+
+Evaluation of language models includes metrics such as accuracy, BLEU score, ROUGE score, perplexity, precision, recall, F1 score, and human evaluation depending on the task.
+
+Responsible AI emphasizes fairness, transparency, accountability, privacy, and security. Developers should carefully evaluate models to reduce bias and prevent harmful outputs.
+
+Artificial Intelligence is transforming healthcare by assisting doctors in disease diagnosis, medical imaging analysis, drug discovery, and personalized treatment recommendations.
+
+In finance, AI helps detect fraudulent transactions, predict stock market trends, automate customer support, and improve risk assessment.
+
+Education benefits from AI-powered tutors, automated grading systems, personalized learning platforms, and intelligent content recommendation systems.
+
+Manufacturing companies use AI for predictive maintenance, quality inspection, demand forecasting, and robotic automation.
+
+Autonomous vehicles rely on computer vision, sensor fusion, machine learning, and reinforcement learning to navigate safely.
+
+Computer Vision enables machines to understand images and videos. Applications include facial recognition, object detection, medical imaging, and autonomous navigation.
+
+Speech Recognition converts spoken language into text, while Text-to-Speech converts written text into natural-sounding speech.
+
+Cloud platforms provide scalable infrastructure for training and deploying AI applications. Popular providers include AWS, Microsoft Azure, and Google Cloud.
+
+Python is the most widely used programming language in AI because of its simplicity and extensive ecosystem of libraries.
+
+Popular AI libraries include NumPy, Pandas, Matplotlib, Scikit-learn, TensorFlow, PyTorch, Transformers, LangChain, and Hugging Face.
+
+Open-source communities continue to accelerate AI research by sharing models, datasets, tutorials, and code repositories.
+
+Continuous learning, experimentation, and hands-on projects are essential for mastering Artificial Intelligence. Building practical applications helps reinforce theoretical concepts and prepares developers for real-world challenges.
+
+The future of AI includes multimodal models, autonomous agents, robotics, scientific discovery, personalized assistants, and collaborative systems that work alongside humans to solve increasingly complex problems.

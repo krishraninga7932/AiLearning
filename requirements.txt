@@ -1,0 +1,40 @@
+# langchain
+# python-dotenv
+# langchain-community
+# pypdf
+# bs4
+# arxiv
+# pymupdf
+# wikipedia
+# langchain-text-splitters
+# sentence_transformers
+# langchain_huggingface
+# faiss-cpu
+# langchain_chroma
+
+
+
+# langchain
+# python-dotenv
+# beautifulsoup4
+# langchain-community
+# faiss-cpu
+# streamlit
+
+
+
+# langchain_community
+
+
+
+
+# PDFChatBot
+langchain
+langchain-groq
+langchain-community
+langchain-chroma
+langchain-huggingface
+pypdf
+sentence-transformers
+python-dotenv
+streamlit
